@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>S4 HANA Cloud Demo Access</title>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../JS/index.js"></script>
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img class="logo" src="../Images/IquantmLogo.png" alt="Iquantm Logo" />
+        <div class="headingContent">
+          <h1>Welcome</h1>
+          <h3>
+            Please click on the below button to generate your custom link to access the demo system, videos, handbooks etc.,
+          </h3>
+        </div>
+      </header>
+      <div class="form-container">
+        <form autocomplete="off" id="userPageForm">
+          <div class="customLink">
+            <button class="btnSubmit" type="button" onclick="giveCustomLink()" id="generate">
+              Generate link
+            </button>
+            <button class="btnSubmit" type="button" onclick="logout()">
+                Logout
+              </button>
+          </div>
+          <div class="customLink-span">
+            <a target="_blank"><span id="customLink"></span></a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

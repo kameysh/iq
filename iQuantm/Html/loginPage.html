@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>S4 HANA Cloud Login</title>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../JS/index.js"></script>
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img class="logo" src="../Images/IquantmLogo.png" alt="Iquantm Logo" />
+        <div class="headingContent">
+          <h1>Please login here</h1>
+          <h3>
+            Login here to access the Demo system, all videos and handbooks etc.,
+          </h3>
+        </div>
+      </header>
+      <div class="form-container">
+        <form autocomplete="off" id="loginForm">
+          <div class="form-input">
+            <input
+              id="LoginbusinessEmail"
+              type="email"
+              name="businessEmail"
+              placeholder="Business Email"
+              required
+            />
+            <span class="errMsg" id="error-LoginEmail"></span>
+            <br />
+          </div>
+          <div class="form-input">
+            <input
+              autocomplete="off"
+              id="LoginPassword"
+              type="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+            <span class="errMsg" id="error-LoginPassword"></span>
+            <br />
+          </div>
+          <div class="submitDiv">
+            <button type="button" class="btnSubmit" onclick="verifyLogin()">
+              Login
+            </button>
+            <button type="button" class="btnSubmit" onclick="routeBack()">
+              Go Back to register
+            </button>
+          </div>
+          <div class="information">
+            <h4>If you have not registered, please register by clicking here</h4>
+            <a target="_blank" href="../Html/index.html"> Register here</a>
+         </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
